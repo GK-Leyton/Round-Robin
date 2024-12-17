@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_gradiente"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="413dp"
+        android:layout_height="329dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_light_salmon"
+        android:padding="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnListo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/btnListo"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="99dp"
+        android:backgroundTint="#FF0000"
+        android:text="Listo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/forma_triangulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/agbalumo"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="Tus Procesos \nRund Robin"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="409dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/red_line"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="1dp">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnCrearRobin"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="138dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#FF0000"
+        android:padding="1dp"
+        android:text="Nuevo Robin"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_navbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListo">
+
+        <ImageButton
+            android:id="@+id/btnCreadorRobin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="2dp"
+            android:background="#FFE0EB"
+            app:srcCompat="@drawable/icono_robot" />
+
+        <ImageButton
+            android:id="@+id/btnVideoTutorialRobin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="164dp"
+            android:background="#FFE0EB"
+            app:srcCompat="@drawable/icono_video" />
+
+        <ImageButton
+            android:id="@+id/btnPasosRobin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="271dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFE0EB"
+            app:srcCompat="@drawable/icono_lista" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="50dp"
+            android:text="Creador Robin"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="153dp"
+            android:layout_marginTop="50dp"
+            android:text="Video Robin"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="50dp"
+            android:text="Paso a Paso"
+            android:textColor="#000000" />" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/btnPregunta"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toStartOf="@+id/btnListo"
+        app:srcCompat="@drawable/icono_cara_pregunta" />
+
+    <ImageButton
+        android:id="@+id/btnRecargar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintStart_toEndOf="@+id/btnListo"
+        app:srcCompat="@drawable/icono_recarga" />
+
+    <ImageButton
+        android:id="@+id/btnOrdenar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecargar"
+        app:layout_constraintStart_toEndOf="@+id/btnListo"
+        app:srcCompat="@drawable/icono_ordenar" />
+
+    <TextView
+        android:id="@+id/txtValorCuantum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="134dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrdenar"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="134dp"
+        android:gravity="center"
+        android:text="Tu Quantum"
+        android:textColor="#000000 "
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrdenar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <ImageButton
+        android:id="@+id/btnSumarQuantum"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:srcCompat="@drawable/icono_suma" />
+
+    <ImageButton
+        android:id="@+id/btnRestarQuantum"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:srcCompat="@drawable/icono_resta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
